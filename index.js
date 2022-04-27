@@ -62,7 +62,11 @@ run().catch(console.dir);
 
 app.get('/', (req, res) => {
     res.send('yes i can do it')
-})
+});
+app.get('/sohag', (req, res) => {
+    res.send('sohag is real')
+});
+
 
 app.listen(port, () => {
     console.log('listenig  to port', port);
